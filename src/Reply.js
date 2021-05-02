@@ -5,10 +5,10 @@ const Reply = ({ reply, setReply,uniqId, setUniqId,data,setData,sendReply,setSen
     
     const handleReply = (id) =>
     {
-        console.log(reply);
+        console.log(reply+" "+id);
         const obj1 = {
             id: id,
-            reply: reply,
+            replycomment: reply,
         }
         setSendReply([...sendReply,obj1])
         

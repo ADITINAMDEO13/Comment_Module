@@ -13,6 +13,10 @@ function App() {
   const [uniqId, setUniqId] = useState();
   const [reply, setReply] = useState();
   const [sendReply, setSendReply] = useState([
+    {
+      id: 1,
+      replycomment:"hello",
+    },
     
   ]);
   const [data, setData] = useState([
@@ -55,7 +59,7 @@ function App() {
           </Route>
              
           <Route path="/display" exact>
-            <DisplayComment text={text} setText={setText} data={data} setData={ setData } selectuser={selectuser} reply={reply} setReply={setReply} uniqId={uniqId} setUniqId={setUniqId}/>
+            <DisplayComment sendReply={sendReply} setSendReply={ setSendReply } text={text} setText={setText} data={data} setData={ setData } selectuser={selectuser} reply={reply} setReply={setReply} uniqId={uniqId} setUniqId={setUniqId}/>
           </Route>
           <Route path="/reply" exact>
             <Reply reply={reply} setReply={setReply} uniqId={uniqId} setUniqId={setUniqId} data={data} setData={setData} sendReply={sendReply} setSendReply={ setSendReply }/>

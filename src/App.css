@@ -100,3 +100,13 @@ h3 span {
     display: flex;
     
 }
+
+.commentDisplay .replydesign{
+
+ width: 400px; 
+ margin-left:150px;
+
+ border-radius: 20px;
+ outline: none;
+ 
+}
