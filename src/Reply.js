@@ -20,7 +20,7 @@ const Reply = ({ reply, setReply,uniqId, setUniqId,data,setData,sendReply,setSen
             <Link to='/display'><button>All Comments</button></Link></div>
             <h1>Reply:</h1>
             <textarea id="reply"  onChange={(e) => setReply(e.target.value)}></textarea>
-            <button type="button" onClick={()=>handleReply(uniqId)}>Reply</button>
+            <Link to='/display'><button type="button" onClick={()=>handleReply(uniqId)}>Reply</button></Link>
         </div>
     );
 }
